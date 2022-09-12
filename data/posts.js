@@ -20,10 +20,10 @@ export const POSTS = [
     },
     {
         imageUrl: 'https://i.ibb.co/182bP1y/4k.png',
-        user: USERS[0].user,
+        user: USERS[1].user,
         likes: 7870,
         caption: 'Train Ride to Hogwarts',
-        profile_picture: USERS[0].image,
+        profile_picture: USERS[1].image,
         comments: [
             {
                 user: 'cleverqazi',
@@ -34,5 +34,5 @@ export const POSTS = [
                 comment: "I'M SLEEPING"
             },
         ],
-    }
+    },
 ]

@@ -34,6 +34,5 @@ const styles = StyleSheet.create({
         marginLeft: 6,
         borderWidth: 3,
         borderColor: '#FF8501',
-        // borderStyle: 'dashed',
     },
 })
