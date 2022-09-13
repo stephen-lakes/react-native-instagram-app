@@ -1,4 +1,4 @@
-import { Image, StyleSheet, Text, View } from 'react-native'
+import { Image, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import React from 'react'
 
 const postFooterIcons = [
@@ -13,7 +13,7 @@ const postFooterIcons = [
     },
     {
         name: 'Share',
-        imageUrl: 'https://img.icons8.com/external-outline-juicy-fish/60/FFFFFF/external-send-arrows-outline-outline-juicy-fish.png'
+        imageUrl: 'https://img.icons8.com/external-outline-juicy-fish/24/FFFFFF/external-send-contact-us-outline-outline-juicy-fish.png'
     },
     {
         name: 'Save',
@@ -27,6 +27,10 @@ const Post = ({ post }) => {
         <Text style={styles.divider}></Text>
         <PostHeader post={post} />
         <PostImage post={post} />
+        <View style={{ marginHorizontal: 15, marginTop: 10 }}>
+            <PostFooter />
+            <Likes post={post} />
+        </View>
     </View>
   )
 }
@@ -56,6 +60,31 @@ const PostImage = ({ post }) => (
     </View>
 )
 
+const PostFooter = () => (
+    <View style={{ flexDirection: 'row' }}>
+        <View style={ styles.leftFooterIconsContainer }>
+            <Icon imgStyle={styles.footerIcon} imgUrl={postFooterIcons[0].imageUrl} />
+            <Icon imgStyle={styles.footerIcon} imgUrl={postFooterIcons[1].imageUrl} />
+            <Icon imgStyle={styles.footerIcon} imgUrl={postFooterIcons[2].imageUrl} />
+        </View>
+        <View style={{ flex: 1, alignItems: 'flex-end' }}>
+            <Image source={{ uri: postFooterIcons[3].imageUrl }} />
+        </View>
+    </View>
+)
+
+const Icon = ({ imgStyle, imgUrl }) => (
+    <TouchableOpacity>
+        <Image style={imgStyle} source={{ uri: imgUrl }} />
+    </TouchableOpacity>
+)
+
+const Likes = ({ post }) => (
+    <View style={{ flexDirection: 'row', marginTop: 4 }}>
+        <Text  style={{ color: '#fff', fontWeight: '600' }}>{post.likes.toLocaleString('en')} likes</Text>
+    </View>
+)
+
 const styles = StyleSheet.create({
     divider: {
         borderWidth: 1,
@@ -69,7 +98,17 @@ const styles = StyleSheet.create({
         borderWidth: 2,
         borderColor: '#FF8501',
     },
-
+    footerIcon: {
+        width: 24,
+        height: 24,
+    },
+    leftFooterIconsContainer: {
+        width: '30%',
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        borderWidth: 1,
+        borderColor: '#fff'
+    },
 })
 
 
