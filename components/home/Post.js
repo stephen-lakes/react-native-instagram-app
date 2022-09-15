@@ -97,7 +97,7 @@ const Caption = ({ post }) => (
 
 const CommentSection = ({ post }) => (
     <Text style={{ color: 'gray' }}>
-        {post.comments.length > 1 ? 'View all ' : 'View '}
+        View{' '}{post.comments.length > 1 ? 'all ' : ''}
         {post.comments.length}
         { post.comments.length > 1 ? ' Comments' : ' Comment'}
      </Text>
