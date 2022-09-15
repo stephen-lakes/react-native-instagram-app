@@ -96,11 +96,15 @@ const Caption = ({ post }) => (
 )
 
 const CommentSection = ({ post }) => (
-    <Text style={{ color: 'gray' }}>
-        View{' '}{post.comments.length > 1 ? 'all ' : ''}
-        {post.comments.length}
-        { post.comments.length > 1 ? ' Comments' : ' Comment'}
-     </Text>
+    <View>
+        { post.comments.length > 0 &&(
+            <Text style={{ color: 'gray' }}>
+                View{' '}{post.comments.length > 1 ? 'all ' : ''}
+                {post.comments.length}
+                { post.comments.length > 1 ? ' Comments' : ' Comment'}
+            </Text>
+        )}
+     </View>
 )
 
 const styles = StyleSheet.create({
