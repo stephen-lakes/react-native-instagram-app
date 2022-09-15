@@ -5,7 +5,7 @@ export const POSTS = [
         imageUrl: 'https://i.ibb.co/182bP1y/4k.png',
         user: USERS[0].user,
         likes: 7870,
-        caption: 'Building a netflix clone with REACT JS. This is going to be a fun build #firebase #react #dev',
+        caption: 'Building a netflix clone with REACT JS and firebase 🔥 🚀. This is going to be a fun build #firebase #react #dev',
         profile_picture: USERS[0].image,
         comments: [
             {
