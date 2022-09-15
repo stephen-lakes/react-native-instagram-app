@@ -107,6 +107,21 @@ const CommentSection = ({ post }) => (
      </View>
 )
 
+const Comments = ({ post }) => (
+    <>
+    {
+        post.comments.map((comment, index) => (
+            <View key={index}>
+                <Text style={{ color: '#fff' }}>
+                    <Text style={{ fontWeight: '600' }}>{comment.user}</Text>
+                    {comment.comment}
+                </Text>
+            </View>
+        ))
+    }
+    </>
+)
+
 const styles = StyleSheet.create({
     divider: {
         borderWidth: 1,
