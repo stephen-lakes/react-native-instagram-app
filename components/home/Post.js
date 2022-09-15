@@ -31,6 +31,7 @@ const Post = ({ post }) => {
             <PostFooter />
             <Likes post={post} />
             <Caption post={post} />
+            <CommentSection post={post} />
         </View>
     </View>
   )
@@ -92,6 +93,11 @@ const Caption = ({ post }) => (
         <Text>  { post.caption }</Text>
     </Text>
     
+)
+
+const CommentSection = ({ post }) => (
+    <Text style={{ color: '#fff' }}> Coments </Text>
+
 )
 
 const styles = StyleSheet.create({
