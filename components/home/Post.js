@@ -17,7 +17,7 @@ const postFooterIcons = [
     },
     {
         name: 'Save',
-        imageUrl: '"https://img.icons8.com/sf-regular/48/FFFFFF/bookmark-ribbon.png'
+        imageUrl: 'https://img.icons8.com/external-bearicons-detailed-outline-bearicons/64/FFFFFF/external-Save-social-media-bearicons-detailed-outline-bearicons.png'
     }
 ]
 
@@ -30,6 +30,7 @@ const Post = ({ post }) => {
         <View style={{ marginHorizontal: 15, marginTop: 10 }}>
             <PostFooter />
             <Likes post={post} />
+            <Caption post={post} />
         </View>
     </View>
   )
@@ -68,7 +69,7 @@ const PostFooter = () => (
             <Icon imgStyle={styles.footerIcon} imgUrl={postFooterIcons[2].imageUrl} />
         </View>
         <View style={{ flex: 1, alignItems: 'flex-end' }}>
-            <Image source={{ uri: postFooterIcons[3].imageUrl }} />
+            <Image source={{ uri: postFooterIcons[3].imageUrl }} style={{ width: 24, height:24 }} />
         </View>
     </View>
 )
@@ -81,8 +82,16 @@ const Icon = ({ imgStyle, imgUrl }) => (
 
 const Likes = ({ post }) => (
     <View style={{ flexDirection: 'row', marginTop: 4 }}>
-        <Text  style={{ color: '#fff', fontWeight: '600' }}>{post.likes.toLocaleString('en')} likes</Text>
+        <Text  style={{ color: '#fff', fontWeight: '700' }}>{post.likes.toLocaleString('en')} likes</Text>
     </View>
+)
+
+const Caption = ({ post }) => (
+    <Text style={{ color: '#fff' }}>
+        <Text style={{ fontWeight: '700' }}>{ post.user }</Text>
+        <Text>  { post.caption }</Text>
+    </Text>
+    
 )
 
 const styles = StyleSheet.create({
