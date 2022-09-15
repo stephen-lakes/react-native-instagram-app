@@ -12,10 +12,7 @@ export const POSTS = [
                 user: 'theqazman',
                 comment: 'Wow! This build looks fire. Super excited about the build',
             },
-            {
-                user: 'amaanath.dev',
-                comment: "Once I wake up, I'll finally be ready to code this up"
-            },
+            
         ],
     },
     {
