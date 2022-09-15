@@ -115,7 +115,7 @@ const Comments = ({ post }) => (
                 <View key={index}>
                     <Text style={{ color: '#fff' }}>
                         <Text style={{ fontWeight: '600' }}>{comment.user}</Text>
-                        {comment.comment}
+                        {' '}{comment.comment}
                     </Text>
                 </View>
             ))
