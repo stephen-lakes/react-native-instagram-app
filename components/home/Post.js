@@ -97,7 +97,7 @@ const Caption = ({ post }) => (
 )
 
 const CommentSection = ({ post }) => (
-    <View style={{ marginTop: 5 }}>
+    <View style={{ marginVertical: 5 }}>
         { post.comments.length > 0 &&(
             <Text style={{ color: 'gray' }}>
                 View{' '}{post.comments.length > 1 ? 'all ' : ''}
@@ -112,7 +112,7 @@ const Comments = ({ post }) => (
     <>
         {
             post.comments.map((comment, index) => (
-                <View key={index}>
+                <View key={index} style={{  marginBottom: 5 }}>
                     <Text style={{ color: '#fff' }}>
                         <Text style={{ fontWeight: '600' }}>{comment.user}</Text>
                         {' '}{comment.comment}
