@@ -96,8 +96,9 @@ const Caption = ({ post }) => (
 )
 
 const CommentSection = ({ post }) => (
-    <Text style={{ color: '#fff' }}> Coments </Text>
-
+    <Text style={{ color: '#fff' }}> 
+        { post.comments.length > 1 ? 'comments' : 'comment'}
+     </Text>
 )
 
 const styles = StyleSheet.create({
