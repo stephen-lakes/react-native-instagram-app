@@ -8,6 +8,8 @@ react-native-instagram is a clone of the instagram mobile application coded in R
 The app feels like instagram.
 
 ## Screenshots
-![picture alt](public/home.png) ![picture alt](public/headerandstories.png)
-![picture alt](public/postandbottomtabs.png) ![picture alt](public/postheader.png)
+![picture alt](public/home.png) ![picture alt](public/postandbottomtabs.png)
+
+![picture alt](public/headerandstories.png) ![picture alt](public/postheader.png)
+
 ![picture alt](public/header.png) ![picture alt](public/stories.png)
