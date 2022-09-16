@@ -10,6 +10,6 @@ The app feels like instagram.
 ## Screenshots
 ![picture alt](public/home.png) ![picture alt](public/postandbottomtabs.png)
 
-![picture alt](public/headerandstories.png) ![picture alt](public/postheader.png)
+![picture alt](public/headerandstories.png)
 
 ![picture alt](public/header.png)
