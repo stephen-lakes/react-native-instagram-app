@@ -15,9 +15,9 @@ export const BOTTOMTABICONS = [
         inactive: 'https://img.icons8.com/ios/24/FFFFFF/instagram-reel.png'
     },
     {
-        name: 'Shop',
-        active: 'https://img.icons8.com/ios-glyphs/24/FFFFFF/shopping-bag-full.png',
-        inactive: 'https://img.icons8.com/windows/24/FFFFFF/shopping-bag-full.png'
+        name: 'Like',
+        active: 'https://img.icons8.com/ios-glyphs/30/FFFFFF/filled-like.png',
+        inactive: 'https://img.icons8.com/material-outlined/24/FFFFFF/filled-like.png'
     },
     {
         name: 'Profile',
