@@ -12,4 +12,4 @@ The app feels like instagram.
 
 ![picture alt](public/headerandstories.png) ![picture alt](public/postheader.png)
 
-![picture alt](public/header.png) ![picture alt](public/stories.png)
+![picture alt](public/header.png)
