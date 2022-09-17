@@ -10,6 +10,10 @@ The app feels like instagram.
 ## Screenshots
 ![picture alt](public/home.png) ![picture alt](public/postandbottomtabs.png)
 
+## Stories component
+
 ![picture alt](public/headerandstories.png)
+
+## Header component
 
 ![picture alt](public/header.png)
