@@ -17,3 +17,7 @@ The app feels like instagram.
 ## Header component
 
 ![picture alt](public/header.png)
+
+## BottomTabs component
+
+![picture alt](public/bottomtabs.png)
