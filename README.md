@@ -1,5 +1,5 @@
 # react-native-instagram-app
-react-native-instagram is a clone of the instagram mobile application coded in React Native. The database used is JSON. This application is used for normal blogging purposes and has the following features:-
+react-native-instagram is a clone of the instagram mobile application coded in React Native. The database used is JSON. The app has the following features:-
 
 * Post
 * Search
